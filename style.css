@@ -1,0 +1,109 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #EAF1F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container */
+
+.container {
+    width: 40%;
+    border-radius: 1em;
+    padding: 2em;
+    background-color: #334F70;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* H3 */
+
+.container h3 {
+    color: #ffffff;
+    margin-bottom: 2em;
+}
+
+/* Get-User-Info */
+
+.container .get-user-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.container .get-weight, .get-height {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.container .get-weight, .get-height span {
+    color: #EAF1F7;
+    font-weight: 600;
+}
+
+.container .get-weight input , .get-height input {
+    margin: 0.5em 0em;
+    border: 1px solid #EAF1F7;
+    outline: none;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    font-weight: 600;
+    box-shadow: rgba(255, 255, 255, 0.10) 0px 5px 15px;
+}
+
+/* Calculate Btn */
+
+.calculate-btn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.calculate-btn button {
+    margin-left: auto;
+    font-weight: 600;
+    background-color: #EAF1F7;
+    color: #334F70;
+    border: none;
+    cursor: pointer;
+    padding: 0.75em 1em; 
+    border-radius: 0.75em;
+    transition: transform 0.1s ease;
+}
+
+.calculate-btn button:hover {
+    transform: scale(1.1);
+}
+
+.calculate-btn .errorMessage {
+    color: rgb(255, 0, 0);
+    font-size: 14px;
+    margin-left: auto;
+    margin-top: 0.5em;
+    font-weight: 600;
+}
+
+/* Display Result */
+
+.display-result h5{
+    margin-top: 2em;
+    color: #EAF1F7;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.display-result h5 .bmi-result, .weight-info {
+    color: #60f0cc;
+} 

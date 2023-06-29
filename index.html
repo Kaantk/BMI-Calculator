@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        <h3>Vücut Kitle Endeksi Hesaplama</h3>
+        <div class="get-user-info">
+            <div class="get-height">
+                <span>Boy (cm)</span>
+                <input type="number" class="height">
+            </div>
+            <div class="get-weight">
+                <span>Kilo (kg)</span>
+                <input type="number" class="weight">
+            </div>
+        </div>
+        <div class="calculate-btn">
+            <button class="btnCalculate">Hesapla</button>
+            <span class="errorMessage"></span>
+        </div>
+        <div class="display-result">
+            <!-- <h5><span class="bmi-result">24,2</span> Vücut Kitle değeriniz ile <span class="weight-info">Normal Kilolu</span> aralıkları içindesiniz.</h5> -->
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
